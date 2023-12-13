@@ -1,0 +1,9 @@
+<tr>
+    <td><%= load.order_number %></td>
+    <td><%= load.quantity %></td>
+    <td><%= load.notes %></td>
+    <td><%= load.ship_date %></td>
+    <td><%= link_to 'Show', load %></td>
+    <td><%= link_to 'Edit', edit_load_path(load) %></td>
+    <td><%= link_to 'Destroy', load, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

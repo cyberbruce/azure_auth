@@ -2,13 +2,22 @@
 
 <h1>Loads</h1>
 
-<div id="loads">
-  <% @loads.each do |load| %>
-    <%= render load %>
-    <p>
-      <%= link_to "Show this load", load %>
-    </p>
-  <% end %>
+<div id="loads" class="table-responsive">
+  <table class="table table-hover table-condensed">
+    <thead> 
+      <tr>
+        <th>Order number</th>
+        <th>Quantity</th>
+        <th>Notes</th>
+        <th>Ship date</th>
+        <th colspan="3"></th>
+    </tr>
+    </thead>
+    <% @loads.each do |load| %>
+    <%= render 'row', load: load %>   
+    <% end %>
+  
+  </table>
 </div>
 
 <%= link_to "New load", new_load_path %>

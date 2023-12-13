@@ -74,3 +74,13 @@ gem "simple_form", "~> 5.3"
 gem "devise", "~> 4.9"
 
 gem 'omniauth-azure-activedirectory-v2'
+gem "omniauth-github", "~> 2.0"
+
+gem "solargraph", "~> 0.50.0"
+
+
+gem "rubocop-rails", "~> 2.22"
+
+gem "omniauth-rails_csrf_protection", "~> 1.0"
+
+gem "dotenv-rails", "~> 2.8"

@@ -311,14 +311,17 @@ Devise.setup do |config|
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
 
+  # turbo links support
   config.responder.error_status = :unprocessable_entity
   config.responder.redirect_status = :see_other
 
-  config.omniauth(
-    :azure_activedirectory_v2,
-    {
+  # setup for Azure AD authentication
+  config.omniauth(:azure_activedirectory_v2,     
+    {     
       client_id:     ENV['AZURE_CLIENT_ID'],
-      client_secret: ENV['AZURE_CLIENT_SECRET']
+      client_secret: ENV['AZURE_CLIENT_SECRET'],
+     
     }
+     
   )
 end
