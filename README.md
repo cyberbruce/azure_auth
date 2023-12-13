@@ -13,8 +13,8 @@ With this sample application, developers can learn how to set up Azure AD integr
 
 
 Create an .env file with:
-
+```
 AZURE_CLIENT_ID='client-id'
 AZURE_CLIENT_SECRET='azure-client-secret'
-
+```
 
