@@ -8,3 +8,13 @@ The OmniAuth gem is used to integrate with Azure AD, enabling the application to
 
 With this sample application, developers can learn how to set up Azure AD integrated authentication in their Ruby on Rails applications using the Devise and OmniAuth gems. It provides a solid foundation for building secure and user-friendly applications that leverage Azure AD for authentication.
 
+
+## Configuration
+
+
+Create an .env file with:
+
+AZURE_CLIENT_ID='client-id'
+AZURE_CLIENT_SECRET='azure-client-secret'
+
+
