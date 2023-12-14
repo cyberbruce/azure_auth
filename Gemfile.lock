@@ -128,6 +128,9 @@ GEM
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashie (5.0.0)
+    httplog (1.6.2)
+      rack (>= 2.0)
+      rainbow (>= 2.0.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
@@ -356,6 +359,7 @@ DEPENDENCIES
   debug
   devise (~> 4.9)
   dotenv-rails (~> 2.8)
+  httplog (~> 1.6)
   jbuilder
   jsbundling-rails
   omniauth-azure-activedirectory-v2

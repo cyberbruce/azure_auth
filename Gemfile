@@ -84,3 +84,4 @@ gem "rubocop-rails", "~> 2.22"
 gem "omniauth-rails_csrf_protection", "~> 1.0"
 
 gem "dotenv-rails", "~> 2.8"
+ 
