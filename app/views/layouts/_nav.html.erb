@@ -17,10 +17,12 @@
                 <div class="navbar-nav">
                     <% if signed_in? %>
                         <%= link_to destroy_user_session_path, data: {'turbo-method': :delete, turbo_confirm: 'Sign out, are you sure?' }, class: 'btn btn-secondary' do %>
-                        <%= current_user.email  %>
+                        <%= current_user.email  %> <i class="bi bi-box-arrow-right"></i>
                         <% end %>
                     <% else %>
-                    <%= button_to 'Login with your Microsoft Azure Account', user_azure_activedirectory_v2_omniauth_authorize_path, data: { turbo: false }, class: 'btn btn-primary' %>
+                    <%= button_to user_azure_activedirectory_v2_omniauth_authorize_path, data: { turbo: false }, class: 'btn btn-primary' do %>
+                    Login with your Microsoft Azure Account <i class="bi bi-door-open-fill"></i>
+                    <% end %>
                     <% end %>
                 </div>
                 </div>
