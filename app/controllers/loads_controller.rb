@@ -1,5 +1,5 @@
 class LoadsController < ApplicationController
-  before_action :authenticate_user!
+  
   before_action :set_load, only: %i[ show edit update destroy ]
 
   # GET /loads or /loads.json
