@@ -1,15 +1,14 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary  bg-gradient">
     <div class="container-fluid">
-        <a class="navbar-brand" href="<%= root_path %>">LMS Testing</a>
+        <a class="navbar-brand" href="<%= root_path %>">Azure Testing</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
-                <div class="d-flex justify-content-between w-100 flex-column flex-sm-row my-xs-2">
+                <div class="d-flex justify-content-between w-100 flex-column flex-sm-row my-sm-2">
 
-                <ul class="navbar-nav">
-                    <li class="nav-item"><%= link_to "Home", root_path, class: 'nav-link' %></li>
+                <ul class="navbar-nav">                    
                     <% if signed_in? %>
                     <li class="nav-item"><%= link_to "Loads", loads_path, class: 'nav-link' %></li>
                     <% end %>
